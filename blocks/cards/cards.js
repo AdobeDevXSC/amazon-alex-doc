@@ -15,8 +15,9 @@ export default function decorate(block) {
   ul.querySelectorAll('picture > img').forEach((img) => {
     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
     // Add width and height as attributes
-    optimizedPic.setAttribute('width', '750');
-    optimizedPic.setAttribute('height', '60');
+    const image = optimizedPic.querySelector('image');
+    image.setAttribute('width', '750');
+    image.setAttribute('height', '60');
     img.closest('picture').replaceWith(optimizedPic);
   });
   block.textContent = '';
