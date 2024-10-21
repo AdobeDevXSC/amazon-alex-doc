@@ -177,6 +177,7 @@ export default async function decorate(block) {
 
   const homeNavLogo = navWrapper.querySelector('a');
   homeNavLogo.setAttribute('alt', 'Home Logo');
+  homeNavLogo.setAttribute('aria-label', 'Home Logo');
 
   //add custom input element in nav-brand element
   const inputContainer = navBrand.querySelector('.default-content-wrapper p:nth-child(2)');
