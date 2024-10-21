@@ -87,7 +87,7 @@ function createSlide(row, slideIndex, carouselId) {
         if (colIdx === 1) column.classList.add('slide-image');
         if (colIdx === 2) column.classList.add('slide-content');
         if (colIdx === 3) {
-            const textSelectorString = column.querySelector('p').textContent;
+            const textSelectorString = column.textContent;
             ctaColorSelector = textSelectorString.split(',')[1].trim();
 
             const link = outermostDiv.querySelector('a');
@@ -157,8 +157,6 @@ export default async function decorate(block) {
 
     rows.forEach((row, idx) => {
         const slide = createSlide(row, idx, carouselId);
-        console.log("slide: ", slide);
-
         slidesWrapper.append(slide);
 
         if (slideIndicators) {

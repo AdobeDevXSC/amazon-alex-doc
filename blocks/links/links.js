@@ -11,7 +11,7 @@ export default function decorate(block) {
       child.classList.add('console-btn');
     }
 
-    const titleText = div.querySelector('p:first-child').textContent;
+    const titleText = div.querySelector('a').textContent;
     const link = div.querySelector('a');
 
     const newLink = document.createElement('a');
