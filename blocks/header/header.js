@@ -175,6 +175,9 @@ export default async function decorate(block) {
   // relocate .nav-brand element 
   navWrapper.prepend(navBrand);
 
+  const homeNavLogo = navWrapper.querySelector('a');
+  homeNavLogo.setAttribute('alt', 'Home Logo');
+
   //add custom input element in nav-brand element
   const inputContainer = navBrand.querySelector('.default-content-wrapper p:nth-child(2)');
   const inputSearchEl = document.createElement('input');
