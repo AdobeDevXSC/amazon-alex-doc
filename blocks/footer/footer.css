@@ -1,14 +1,193 @@
 footer {
-  padding: 2rem;
   background-color: var(--light-color);
-  font-size: var(--body-font-size-s);
+  font-size: var(--body-font-size-xs);
+  padding-bottom: 30px;
 }
 
-footer .footer {
-  max-width: 1200px;
+footer .footer > div {
   margin: auto;
 }
 
 footer .footer p {
   margin: 0;
+}
+
+footer .footer ul {
+  list-style: none;
+}
+
+footer .footer .section > div {
+  max-width: 1200px;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+footer .footer .section > div > ul {
+  display: flex;
+  color: #fff;
+  padding: 0;
+}
+
+footer .footer .section > div > ul > li {
+  font-size: 0;
+}
+
+footer .footer .section > div > ul > li > ul {
+  padding: 0;
+  font-family: 'AmazonEmber_Bd';
+}
+
+footer .footer .section > div > ul > li > ul > li {
+  margin-bottom: 2rem;
+  font-size: 16px;
+}
+
+footer .footer .section > div > ul > li > ul > li > ul {
+  padding: 0;
+  font-size: 13px;
+}
+
+footer .footer .section > div > ul > li > ul > li > ul > li {
+  font-family: 'AmazonEmber_Rg';
+  color: rgba(208, 212, 215);
+}
+
+footer .footer .section.one {
+  background-color: #152939;
+}
+
+/* .section.two */
+footer .footer .section.two {
+  background-color: #152939;
+}
+
+footer .footer .section.two {
+  color: #fff;
+  font-size: 16px;
+  border-top: 1px solid #1a364c;
+}
+
+footer .footer .section.two > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer .section.two > div > ul {
+  gap: 5px;
+  margin-left: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-direction: row;
+}
+
+footer .footer .section.two > div > ul > li p {
+  line-height: 1;
+}
+
+/* .section.three */
+footer .footer .section.three {
+  background-color: #404951;
+}
+
+footer .footer .section.three > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+footer .footer .section.three img {
+  width: 200px;
+  height: auto;
+}
+
+/* .section.four */
+footer .footer .section.four {
+  background: #131A23;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .footer .section.four > div {
+  max-width: unset;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer .section.four > div > p:first-of-type {
+  margin-right: auto;
+}
+
+footer .footer .section.four > div > p:nth-child(2) {
+  color: #6c757d;
+  margin-right: 1rem;
+}
+
+footer .footer .section.four > div > ul {
+  gap: 10px;
+  margin: 0;
+}
+
+footer .footer .section.four > div > ul > li {
+  font-size: inherit;
+}
+
+
+@media (width >= 900px) {
+  footer .footer .section > div > ul {
+    gap: 100px;
+  }
+
+  footer .footer .section.two > div {
+    justify-content: flex-end;
+  }
+
+  footer .footer .section.three > div {
+    gap: 6vw;
+    flex-direction: row;
+  }
+}
+
+@media (width >= 1200px) {
+  footer .footer .section > div > ul {
+    justify-content: space-between;
+  }
+}
+
+@media (width < 900px) {
+  footer .footer .section > div > ul {
+    flex-direction: column;
+  }
+
+  footer .footer .section.four {
+    position: relative;
+  }
+
+  footer .footer .section.four > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  footer .footer .section.four > div p:first-of-type {
+    margin-right: 0;
+  }
+
+  footer .footer .section.four > div p:nth-child(2) {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  footer .footer .section.four > div > ul {
+    flex-direction: row;
+  }
 }
